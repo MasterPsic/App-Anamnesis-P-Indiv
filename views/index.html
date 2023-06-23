@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-  <title>Block de notas Ger</title>node
-  <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h1>Block de Ger</h1>
-      </div>
-    <div class="editor" contenteditable></div>
+<html>
+<head>
+  <title>Bloc de Notas</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Bloc de Notas</h1>
+  <div class="nota">
+    <textarea id="texto" rows="10" cols="50"></textarea>
+    <div class="botones">
+      <button id="guardar">Guardar</button>
+      <button id="cargar">Cargar</button>
+      <button id="borrar">Borrar</button>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
