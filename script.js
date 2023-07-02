@@ -1,4 +1,4 @@
-// Obtener elementos del DOM
+// Obtener elementos del DOM para interactuar
 var guardarBtn = document.getElementById("guardar");
 var cargarBtn = document.getElementById("cargar");
 var borrarBtn = document.getElementById("borrar");
