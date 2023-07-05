@@ -1,31 +1,30 @@
-// Obtener elementos del DOM para interactuar
-var guardarBtn = document.getElementById("guardar");
-var cargarBtn = document.getElementById("cargar");
-var borrarBtn = document.getElementById("borrar");
-var textoInput = document.getElementById("texto");
+ // Obtener referencias a los elementos del DOM
+const textoInput = document.getElementById('texto');
+const guardarBtn = document.getElementById('guardar');
+const cargarBtn = document.getElementById('cargar');
+const borrarBtn = document.getElementById('borrar');
 
-// Escuchar evento de clic en el botón "Guardar"
-guardarBtn.addEventListener("click", function() {
-  var nota = textoInput.value;
-  localStorage.setItem("nota", nota);
-  alert("Nota guardada correctamente");
+// Event listener para el botón de Guardar
+guardarBtn.addEventListener('click', () => {
+  const texto = textoInput.value;
+  localStorage.setItem('textoGuardado', texto);
+  alert('Texto guardado exitosamente');
 });
 
-// Escuchar evento de clic en el botón "Cargar"
-cargarBtn.addEventListener("click", function() {
-  var notaGuardada = localStorage.getItem("nota");
-  if (notaGuardada) {
-    textoInput.value = notaGuardada;
-    alert("Nota cargada correctamente");
+// Event listener para el botón de Cargar
+cargarBtn.addEventListener('click', () => {
+  const textoGuardado = localStorage.getItem('textoGuardado');
+  if (textoGuardado) {
+    textoInput.value = textoGuardado;
+    alert('Texto cargado exitosamente');
   } else {
-    alert("No hay ninguna nota guardada");
+    alert('No se encontró ningún texto guardado');
   }
 });
 
-// Escuchar evento de clic en el botón "Borrar"
-borrarBtn.addEventListener("click", function() {
-    localStorage.removeItem("nota");
-    textoInput.value = "";
-    alert("Nota borrada correctamente");
-  });
-  
+// Event listener para el botón de Borrar
+borrarBtn.addEventListener('click', () => {
+  localStorage.removeItem('textoGuardado');
+  textoInput.value = '';
+  alert('Texto borrado exitosamente');
+});
