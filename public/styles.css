@@ -10,7 +10,7 @@ h1 {
 
 .nota {
   margin-top: 20px;
-  background-color: #f5d940;
+  background-color: hwb(76 25% 4% / 0.895);
   border: 1px solid #530ee8;
   padding: 10px;
 }
@@ -31,4 +31,8 @@ button {
 
 h2 {
   text-align: center;
+}
+
+.foto-Ger {
+  border-radius: 20%;
 }
