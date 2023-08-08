@@ -1,4 +1,4 @@
- // Obtener referencias a los elementos del DOM
+// Obtener referencias a los elementos del DOM
 const textoInput = document.getElementById('texto');
 const guardarBtn = document.getElementById('guardar');
 const cargarBtn = document.getElementById('cargar');
